@@ -1,0 +1,1 @@
+Select * FROM [FlipkartDb].[dbo].[flipkart];
