@@ -1,0 +1,49 @@
+﻿<process name="Flipkart Process" version="1.0" bpversion="6.9.0.26970" narrative="Flipkart Retrievieng data  " byrefcollection="true" preferredid="acf497f0-70fd-4eec-9a0d-0550cde1aef1" published="true">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="b8c52af8-6cf5-44b6-9369-d98e3caea595" name="Start" type="Start">
+    <display x="15" y="-165" />
+    <onsuccess>bab63e54-4d31-450d-8e94-dedc09670f2d</onsuccess>
+  </stage>
+  <stage stageid="54c59328-a018-4983-8687-2436fde85475" name="End" type="End">
+    <display x="15" y="105" />
+  </stage>
+  <stage stageid="1b2ebb3c-f04b-4e63-931c-efb4a4c11ac4" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="bab63e54-4d31-450d-8e94-dedc09670f2d" name="Action1" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-120" />
+    <onsuccess>2b151f50-6a2c-4e55-bd7d-45e1e06ff371</onsuccess>
+    <resource object="Flipkart Application" action="Launch Application" />
+  </stage>
+  <stage stageid="2b151f50-6a2c-4e55-bd7d-45e1e06ff371" name="Flipkart Application::Search Product" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-75" />
+    <onsuccess>d072769e-3117-4c43-9c03-8897e976414f</onsuccess>
+    <resource object="Flipkart Application" action="Search Product" />
+  </stage>
+  <stage stageid="d072769e-3117-4c43-9c03-8897e976414f" name="Flipkart Application::Insert Data Excel" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <onsuccess>2be4025b-b275-4318-8371-e07c3d9a8bf1</onsuccess>
+    <resource object="Flipkart Application" action="Insert Data Excel" />
+  </stage>
+  <stage stageid="2be4025b-b275-4318-8371-e07c3d9a8bf1" name="Flipkart Application::Check Null Data" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>37e7e67f-317c-437e-aadd-579a23711133</onsuccess>
+    <resource object="Flipkart Application" action="Check Null Data" />
+  </stage>
+  <stage stageid="37e7e67f-317c-437e-aadd-579a23711133" name="Flipkart Application::Get Color" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="60" />
+    <onsuccess>54c59328-a018-4983-8687-2436fde85475</onsuccess>
+    <resource object="Flipkart Application" action="Get Color" />
+  </stage>
+</process>
